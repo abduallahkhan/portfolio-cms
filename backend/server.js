@@ -9,9 +9,10 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: ['https://peppy-kleicha-fb678f.netlify.app', 'http://localhost:3000'],
-  credentials: true
-}));;
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
