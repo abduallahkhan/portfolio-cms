@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const AuthContext = createContext();
 
-const API = 'http://localhost:5000/api';
+const API = const API = 'https://portfolio-cms-production-22ff.up.railway.app/api';
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
