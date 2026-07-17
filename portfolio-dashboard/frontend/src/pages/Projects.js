@@ -116,7 +116,7 @@ export default function Projects() {
           {projects.map(p => (
             <div className="card" key={p._id} style={{ padding: 0, overflow: 'hidden' }}>
               {p.image && (
-                <img src={`http://localhost:5000${p.image}`} alt={p.title}
+                <img src={`https://portfolio-cms-production-22ff.up.railway.app${p.image}`} alt={p.title}
                   style={{ width: '100%', height: 160, objectFit: 'cover' }} />
               )}
               {!p.image && (

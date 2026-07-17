@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const BASE_URL = 'http://localhost:5000/api';
+export const BASE_URL = 'https://portfolio-cms-production-22ff.up.railway.app/api';
 
 // Profile
 export const getProfile = () => axios.get(`${BASE_URL}/profile`);
