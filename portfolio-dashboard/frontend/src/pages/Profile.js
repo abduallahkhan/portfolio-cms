@@ -4,7 +4,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { Save, Upload, Github, Linkedin, Twitter, Instagram, User, Lock, Eye, EyeOff } from 'lucide-react';
 
-const BASE = 'http://localhost:5000/api';
+https://portfolio-cms-production-22ff.up.railway.app/api;
 
 export default function Profile() {
   const [form, setForm] = useState({

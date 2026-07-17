@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import { Github, ExternalLink, MapPin, Mail, Phone, Globe, Linkedin, Twitter } from 'lucide-react';
 
-const BASE = 'http://localhost:5000/api';
+const BASE = https://portfolio-cms-production-22ff.up.railway.app/api;
 
 const catColors = {
   'Web Development': '#6c63ff',
