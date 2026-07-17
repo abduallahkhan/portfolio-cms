@@ -4,7 +4,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { Save, Upload, Github, Linkedin, Twitter, Instagram, User, Lock, Eye, EyeOff } from 'lucide-react';
 
-const BASE = 'http://localhost:5000/api';
+const BASE = 'https://portfolio-cms-production-22ff.up.railway.app/api';
 
 export default function Profile() {
   const [form, setForm] = useState({
@@ -34,7 +34,7 @@ export default function Profile() {
           location: d.location || '', website: d.website || '',
           social: d.social || { github: '', linkedin: '', twitter: '', instagram: '' }
         });
-        if (d.profileImage) setImagePreview(`http://localhost:5000${d.profileImage}`);
+        if (d.profileImage) setImagePreview(`https://portfolio-cms-production-22ff.up.railway.app${d.profileImage}`);
       })
       .catch(() => toast.error('Failed to load profile'))
       .finally(() => setLoading(false));

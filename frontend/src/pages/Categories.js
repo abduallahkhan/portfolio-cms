@@ -3,7 +3,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { Plus, Pencil, Trash2, Tag, X } from 'lucide-react';
 
-const BASE = 'http://localhost:5000/api';
+const BASE = 'https://portfolio-cms-production-22ff.up.railway.app/api';
 const COLORS = ['#6c63ff', '#ff6584', '#43d4a0', '#f6ad55', '#63b3ed', '#f687b3', '#fc8181'];
 const ICONS = ['📁', '🌐', '📱', '🎨', '📊', '⚙️', '🚀', '💡', '🔧', '📝'];
 const empty = { name: '', color: '#6c63ff', icon: '📁', description: '' };

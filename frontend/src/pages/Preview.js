@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import { Github, ExternalLink, MapPin, Mail, Phone, Globe, Linkedin, Twitter } from 'lucide-react';
 
-const BASE = 'http://localhost:5000/api';
+const BASE = 'https://portfolio-cms-production-22ff.up.railway.app/api';
 
 const catColors = {
   'Web Development': '#6c63ff',
@@ -69,7 +69,7 @@ export default function Preview() {
       <div style={{ background: 'linear-gradient(135deg, #1a1d2e 0%, #0f1117 100%)', borderBottom: '1px solid #2e3354', padding: '80px 20px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
           {profile.profileImage ? (
-            <img src={`http://localhost:5000${profile.profileImage}`} alt="Profile"
+            <img src={`https://portfolio-cms-production-22ff.up.railway.app${profile.profileImage}`} alt="Profile"
               style={{ width: 100, height: 100, borderRadius: '50%', objectFit: 'cover', border: '3px solid #6c63ff', marginBottom: 20 }} />
           ) : (
             <div style={{ width: 100, height: 100, borderRadius: '50%', background: 'linear-gradient(135deg, #6c63ff, #ff6584)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 36, fontWeight: 700, color: 'white', margin: '0 auto 20px' }}>
@@ -133,7 +133,7 @@ export default function Preview() {
                 onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-4px)'}
                 onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
                 {p.image ? (
-                  <img src={`http://localhost:5000${p.image}`} alt={p.title} style={{ width: '100%', height: 160, objectFit: 'cover' }} />
+                  <img src={`https://portfolio-cms-production-22ff.up.railway.app${p.image}`} alt={p.title} style={{ width: '100%', height: 160, objectFit: 'cover' }} />
                 ) : (
                   <div style={{ height: 160, background: `${catColors[p.category] || '#6c63ff'}22`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 40 }}>
                     🚀
