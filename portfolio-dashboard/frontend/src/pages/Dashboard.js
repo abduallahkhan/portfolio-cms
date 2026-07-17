@@ -6,7 +6,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pi
 import { useAuth } from '../context/AuthContext';
 
 const COLORS = ['#6c63ff', '#ff6584', '#43d4a0', '#f6ad55', '#63b3ed'];
-const BASE = 'http://localhost:5000/api';
+const BASE = 'https://portfolio-cms-production-22ff.up.railway.app/api';
 
 const categoryClass = {
   'Web Development': 'badge-web', 'Mobile Development': 'badge-mobile',

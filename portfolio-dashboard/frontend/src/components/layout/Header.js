@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { Menu, Bell, X, Trash2 } from 'lucide-react';
 import axios from 'axios';
 
-const BASE = 'http://localhost:5000/api';
+const BASE = 'https://portfolio-cms-production-22ff.up.railway.app/api';
 
 const pageTitles = {
   '/': { title: 'Dashboard', sub: "Welcome back! Here's your portfolio overview." },
