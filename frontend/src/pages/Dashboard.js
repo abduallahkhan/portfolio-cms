@@ -28,17 +28,15 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
-    Promise.all([
-      getDashboardStats(),
-      axios.get(`${BASE}/activities`)
-    ])
-      .then(([statsRes, actRes]) => {
-        setStats(statsRes.data);
-        setActivities(actRes.data);
-      })
-      .catch(() => {})
-      .finally(() => setLoading(false));
+    const token = localStorage.getItem('token');
+    axios.get(`https://portfolio-cms-production-22ff.up.railway.app/api/dashboard/stats`, {
+      headers: { Authorization: `Bearer ${token}` }
+    })
+    .then(res => setStats(res.data))
+    .catch((err) => console.log('error:', err))
+    .finally(() => setLoading(false));
   }, []);
+    
 
   if (loading) return <div style={{ display: 'flex', justifyContent: 'center', padding: 60 }}><div className="spinner" /></div>;
 
@@ -177,7 +175,7 @@ export default function Dashboard() {
             <Eye size={16} /> View My Public Portfolio
           </a>
         </div>
-      )}
+      )}h
     </div>
   );
 }
